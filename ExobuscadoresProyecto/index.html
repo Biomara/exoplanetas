@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Exobuscadores estelares</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: #231F20"></canvas>
+    <script src="Build/ExobuscadoresProyecto.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/ExobuscadoresProyecto.data",
+        frameworkUrl: "Build/ExobuscadoresProyecto.framework.js",
+        codeUrl: "Build/ExobuscadoresProyecto.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "ExobuscadoresProyecto",
+        productVersion: "0.1",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+    
+    <p>TEN EN CUENTA QUE EL TIEMPO DE CARGA PUEDE VARIAR EN DIFERENTES DISPOSITIVOS.</p>
+   
+   <p> Así mismo estas inmerso en un entorno 3d, Manteniendo "Click Derecho" del cursor ,y moviendo el ratón le puedes dar una checada.</p>
+
+  </body>
+</html>
